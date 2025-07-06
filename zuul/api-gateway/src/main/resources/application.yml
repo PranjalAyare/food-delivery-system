@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+zuul:
+  routes:
+    auth-service: # This is the route ID
+      path: /auth/**
+      service-id: auth-service
+      # Recommended if your downstream service expects the full path
+      sensitive-headers: [] # Crucial for forwarding headers like Authorization
+
+    restaurant-service: # This is the route ID
+      path: /restaurant/**
+      service-id: restaurant-service
+      # Recommended
+      sensitive-headers: []
+
+    order-service: # This is the route ID
+      path: /orders/**
+      service-id: order-service
+      # Recommended
+      sensitive-headers: []
+
+    payment-service: # This is the route ID
+      path: /payments/**
+      service-id: payment-service
+      # Recommended
+      sensitive-headers: []
+
+# Optional: Disable retry mechanism if not needed or to avoid unintended retries
+# zuul.retryable: false
