@@ -1,0 +1,4 @@
+com\fooddelivery\payment_service\controller\PaymentControllerTest.class
+com\fooddelivery\payment_service\service\PaymentServiceTest.class
+com\fooddelivery\payment_service\PaymentServiceApplicationTests.class
+com\fooddelivery\payment_service\config\TestSecurityConfig.class
