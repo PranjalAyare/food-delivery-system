@@ -1,0 +1,4 @@
+com\fooddelivery\restaurant_service\config\TestSecurityConfig.class
+com\fooddelivery\restaurant_service\controller\RestaurantControllerTest.class
+com\fooddelivery\restaurant_service\service\RestaurantServiceTest.class
+com\fooddelivery\restaurant_service\RestaurantServiceApplicationTests.class
