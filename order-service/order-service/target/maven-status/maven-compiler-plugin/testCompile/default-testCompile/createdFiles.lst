@@ -1,0 +1,4 @@
+com\fooddelivery\order_service\config\TestSecurityConfig.class
+com\fooddelivery\order_service\service\OrderServiceTest.class
+com\fooddelivery\order_service\OrderServiceApplicationTests.class
+com\fooddelivery\order_service\controller\OrderControllerTest.class
